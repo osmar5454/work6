@@ -77,12 +77,12 @@ Widget carta(BuildContext context ,String color,String nombre ,String poder,Stri
         Column(
           children: <Widget>[
             Container(
-              margin: EdgeInsets.only(right: 170.0 , top: 80.0),
+              margin: EdgeInsets.only(right: 170.0 , top: 70.0),
               width: 200.0,
               height: 10.0,
               child: Text(nombre , style: TextStyle(fontFamily: 'Muli' ,fontWeight: FontWeight.w600 , fontSize: 25.0 ,color: colorTexto )),
             ),
-            SizedBox(height: 35.0),
+            SizedBox(height: 30.0),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
@@ -95,25 +95,25 @@ Widget carta(BuildContext context ,String color,String nombre ,String poder,Stri
                 ),
               ],
             ),
-            SizedBox(height: 3.0,),
+            SizedBox(height: 30.0,),
             Container(
-              margin: EdgeInsets.only(right: 175.0, top: 10.0),
-              padding: EdgeInsets.only(top: 2.0  , right: 125.0),
+              margin: EdgeInsets.only(right: 290.0, top: 0.0),
+              padding: EdgeInsets.only(top: 0.0  , right: 0.0),
               color: Colors.transparent,
               width: 195.0,
-              height: 15.0,
+              height: 12.0,
               child: Column(
                 children: <Widget>[
-                  Text('Comments   (24)' ,style: TextStyle(fontFamily: 'Muli' , fontWeight: FontWeight.w500 , fontSize:  9.0 , color: colorTexto),)
+                  Text('Comments ... (24)' ,style: TextStyle(fontFamily: 'Muli' , fontWeight: FontWeight.w500 , fontSize:  9.0 , color: colorTexto),)
                 ],
               ),
             ),
             Container(
-              margin: EdgeInsets.only(right: 170.0, top: 0.0 , left:  13.0),
-              padding: EdgeInsets.only(top: 2.0  , right: 80.0),
+              margin: EdgeInsets.only(right: 150.0, top: 0.0 , left:  13.0),
+              padding: EdgeInsets.only(top: 0.0  , right: 80.0),
               color: Colors.transparent,
-              width: 220.0,
-              height: 15.0,
+              width: 250.0,
+              height: 12.0,
               child: Row(
                 children: <Widget>[
                   Text('BY' ,style: TextStyle(fontFamily: 'Muli' , fontWeight: FontWeight.w500 , fontSize:  9.0 , color: colorTexto),),
