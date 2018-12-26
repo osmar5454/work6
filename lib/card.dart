@@ -38,11 +38,11 @@ Widget carta(BuildContext context ,String color,String nombre ,String poder,Stri
             children: <Widget>[
               Text('Rates', style: TextStyle(fontFamily: 'Pacifico', fontSize: 13.0 , color: Color(getColorHexFromStr('#F9622F')) ,fontWeight: FontWeight.w500  ),),
               SizedBox(width: 3.0,),
-              Icon(Icons.star , size: 13.0, color: Colors.black,),
-              Icon(Icons.star , size: 13.0, color: Colors.black,),
-              Icon(Icons.star , size: 13.0, color: Colors.black,),
-              Icon(Icons.star_half , size: 13.0, color: Colors.black,),
-              Icon(Icons.star_border , size: 13.0, color: Colors.black,),
+              Icon(Icons.star , size: 13.0, color: Color(getColorHexFromStr('#F77BB3')),),
+              Icon(Icons.star , size: 13.0, color:  Color(getColorHexFromStr('#F77BB3')),),
+              Icon(Icons.star , size: 13.0, color: Color(getColorHexFromStr('#F77BB3')),),
+              Icon(Icons.star_half , size: 13.0, color:  Color(getColorHexFromStr('#F77BB3')),),
+              Icon(Icons.star_border , size: 13.0, color:  Color(getColorHexFromStr('#F77BB3')),),
 
             ],
           )

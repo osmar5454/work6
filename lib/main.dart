@@ -20,7 +20,9 @@ class MyHomePage extends StatefulWidget {
   _MyHomePageState createState() => new _MyHomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _MyHomePageState extends State<MyHomePage>  {
+
+
 
   int getColorHexFromStr(String colorStr) {
     colorStr = "FF" + colorStr;
@@ -61,7 +63,6 @@ class _MyHomePageState extends State<MyHomePage> {
                 padding: EdgeInsets.only(left: 15.0 , top:20.0 ) ,
                 child: Column(
                   children: <Widget>[
-
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
@@ -83,8 +84,6 @@ class _MyHomePageState extends State<MyHomePage> {
                             ),
                           ),
                         ),
-
-
                         Row(children: <Widget>[
                           Container(
                             width: 40.0,
@@ -101,10 +100,10 @@ class _MyHomePageState extends State<MyHomePage> {
                             height: 40.0,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(15.0) , 
-                              color: Color(getColorHexFromStr('#764CFF')),
+                              color: Color(getColorHexFromStr('#7BF7E4')),
                               boxShadow: [
                                 BoxShadow(
-                                  color: Color(getColorHexFromStr('#764CFF')) , spreadRadius: 0.0 , blurRadius: 4.0
+                                  color: Color(getColorHexFromStr('#7BF7E4')) , spreadRadius: 0.5 , blurRadius: 10.0
                                 )
                               ]
                             ),
@@ -120,10 +119,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             )
                           ),
                           SizedBox(width: 10.0,),
-
                         ],)
-
-
                       ],
                     ),
 
@@ -149,37 +145,31 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                     SizedBox(height: 5.0,),
                     Text('Los cambios no son buenos ni malos, son inevitables.', style: TextStyle(fontFamily: 'IndieFlower' , fontSize: 17.5 , color: Color(getColorHexFromStr('#011C33')) ),),
-
                     SizedBox(height: 10.0,),
                     Container(
                       padding: EdgeInsets.only(left: 2.0 , right: 4.0),
                       width: MediaQuery.of(context).size.width,
                       child: Row(
-
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: <Widget>[
-
                           Column(
                             children: <Widget>[
-                              Text('1.123' , style: TextStyle(fontFamily: 'Merriweather' , fontSize: 18.0 ,fontWeight: FontWeight.w500 , color: Colors.black),),
+                              Text('1.123' , style: TextStyle(fontFamily: 'Monserrat' , fontSize: 18.0 ,fontWeight: FontWeight.w500 , color: Colors.black),),
                               Text('LIKES' , style: TextStyle(fontFamily: 'Merriweather' , fontSize: 10.0 , fontWeight: FontWeight.w500 , color: Colors.grey.withOpacity(0.6)),)
                             ],
                           ),
                           Column(
                             children: <Widget>[
-                              Text('24K' , style: TextStyle(fontFamily: 'Merriweather' , fontSize: 18.0 ,fontWeight: FontWeight.w500 , color: Colors.black),),
+                              Text('24K' , style: TextStyle(fontFamily: 'Monserrat' , fontSize: 18.0 ,fontWeight: FontWeight.w500 , color: Colors.black),),
                               Text('FOLLOWERS' , style: TextStyle(fontFamily: 'Merriweather' , fontSize: 10.0 , fontWeight: FontWeight.w500 , color: Colors.grey.withOpacity(0.6)),)
                             ],
                           ),
                           Column(
                             children: <Widget>[
-                              Text('521' , style: TextStyle(fontFamily: 'Merriweather' , fontSize: 18.0 ,fontWeight: FontWeight.w500 , color: Colors.black),),
+                              Text('521' , style: TextStyle(fontFamily: 'Monserrat' , fontSize: 18.0 ,fontWeight: FontWeight.w500 , color: Colors.black),),
                               Text('FOLLOWING' , style: TextStyle(fontFamily: 'Merriweather' , fontSize: 10.0 , fontWeight: FontWeight.w500 , color: Colors.grey.withOpacity(0.6)),)
                             ],
                           ),
-
-
-
                         ],
                       ),
                     ),
@@ -199,8 +189,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
                          ],
                        ),
-                       
-                       
                       Row(
                         children: <Widget>[
                           Text('More'  , style: TextStyle(fontFamily: 'Comfortaa' , fontSize: 12.0 , color: Color(getColorHexFromStr('#270CD6' )) , fontWeight: FontWeight.bold ),),
@@ -210,21 +198,16 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                      ],
                    ),
-
-
-                    carta(context, '#523ED6', 'Baby Dragon','Una unidad voladora que inflige daño de área. Cuando nacen, los bebes dragón son monísimos, pero también tienen mucha hambre y siempre les apetece un buen churrasco.','images/img1.png',Color(getColorHexFromStr('#FFFCF2'))),
+                    carta(context, '#523ED6', 'Baby Dragon','Una unidad voladora que inflige daño de área. Cuando nacen, los bebes dragón son monísimos, pero también tienen mucha hambre y siempre les apetece un buen churrasco.','images/dragon.png',Color(getColorHexFromStr('#FFFCF2'))),
                     carta(context, '#F45D69'  , 'Wich' ,'Invoca esqueletos y dispara rayos destructores. Por desgracia, sus brillantes ojos de color rosa no disparan rayos láser.','images/img4.png',Colors.white),
                     carta(context, '#FF9868'  , 'Minions' ,'Tres atacantes voladores, rápidos y desarmados. ¿Es un pájaro? ¿Es un avión? ¡No, es un superesbirro!','images/img10.png',Colors.white),
                     carta(context, '#E3E858'  , 'P.E.K.K.A' ,'Un luchador cuerpo a cuerpo pesado y lento. Se contonea ligeramente al andar, ¡pero atiza un puñetazo que no veas!','images/img13.png',Colors.black),
                     carta(context, '#78E8DB'  , 'Ice Wizard' ,'Este señor tan frío dispara fragmentos de hielo a sus enemigos y ralentiza su velocidad de movimiento y de ataque. Aunque él sea un témpano de hielo, su bigote hace que suba la temperatura en la arena.','images/img5.png',Colors.black),
                     carta(context, '#E861A2'  , 'Hunter' ,'Genera un gran daño mientras más cerca está de su objetivo. Todo lo que le falta en precisión lo tiene escondido en sus pobladas cejas.','images/img6.png',Colors.white),
-                    carta(context, '#6FFC84'  , 'Golem' ,'Es lento, pero resistente, y solo ataca las estructuras. Cuando se destruye, explota y se convierte en dos golemitas que infligen daño de área.','images/golem.png',Colors.black),
+                    carta(context, '#7BF7A0'  , 'Golem' ,'Es lento, pero resistente, y solo ataca las estructuras. Cuando se destruye, explota y se convierte en dos golemitas que infligen daño de área.','images/golem.png',Colors.black),
                     carta(context, '#6F94FC'  , 'Lava Hound' ,'El sabueso de lava es una majestuosa bestia voladora que ataca estructuras. Los cachorros son un poco menos majestuosos, pero igual de bestias... y atacan a cualquier cosa.','images/img8.png',Colors.white),
-                    carta(context, '#F2F5FF'  , 'Hog Rider' ,'Unidad cuerpo a cuerpo rápida que ataca las estructuras y puede saltar el río. Sigue la llamada del montapuercos de una puerta de la arena a la otra.','images/img9.png',Colors.black),
+                    carta(context, '#1F253F'  , 'Hog Rider' ,'Unidad cuerpo a cuerpo rápida que ataca las estructuras y puede saltar el río. Sigue la llamada del montapuercos de una puerta de la arena a la otra.','images/img9.png',Colors.white),
                     carta(context, '#FF91F5'  , 'Barbarians' ,'Una horda de atacantes cuerpo a cuerpo con un perverso bigote y un caracter aún peor.','images/gladiador.png',Colors.black),
-
-
-
                   ],
                 )
               ),
